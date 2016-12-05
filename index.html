@@ -2,7 +2,7 @@
 <html>
 <body>
 SETTING UP UBUNTU SERVER ON VIRTUALBOX
-1.	Download virtualBox (https://www.virtualbox.org) and Ubuntu server (https://www.ubuntu.com/download/server) 
+1.	Download virtualBox (https://www.virtualbox.org) and Ubuntu server (https://www.ubuntu.com/download/server)
 2.	Install Virtualbox.
 3.	Create a new machine on virtualBox and name it Ubuntu
 4.	Give the machine around 2 Gigabytes of ram depending on your computer
@@ -13,7 +13,7 @@ SETTING UP UBUNTU SERVER ON VIRTUALBOX
 
 Install Docker and launch Docker
 1.	First you need to install curl. To check if you have it type: which Curl
-2.	If you don‘t have it install curl by typing: Sudo apt-get install curl
+2.	If you donï¿½t have it install curl by typing: Sudo apt-get install curl
 3.	Now install docker using curl: curl -fsSL https://get.docker.com/ | sh
 4.	Once installed, start up the daemon service: sudo service docker start
 5.	Now get the Apache image: sudo docker pull eboraas/apache
@@ -29,15 +29,15 @@ Install Docker and launch Docker
 
 Install and create an SQL database
 1.	First you need to install mysql so type: sudo apt-get install mysql-server
-2.	Run a setup script for Mysql by typing: sudo /usr/bin/mysql_secure_installation 
+2.	Run a setup script for Mysql by typing: sudo /usr/bin/mysql_secure_installation
 3.	When prompted for a password enter the sudo password
-4.	You‘ll also be prompted to change the password, Just say no. 
+4.	Youï¿½ll also be prompted to change the password, Just say no.
 5.	You can select yes for the rest of the options.
-6.	Now once it‘s installed type in: mysql -u root -p   Then enter your password.
-7.	Now you‘re in the mysql console, here you will do all editing, creating and deleting of data and databases.
-Let‘s start off by creating a database called Logs with the columns: ID, Date, User, Memory, IP, Hostname.
+6.	Now once itï¿½s installed type in: mysql -u root -p   Then enter your password.
+7.	Now youï¿½re in the mysql console, here you will do all editing, creating and deleting of data and databases.
+Letï¿½s start off by creating a database called Logs with the columns: ID, Date, User, Memory, IP, Hostname.
 8.	Type: mysql -u root -p  in order to open up the MySql command prompt.
-9.	Start of by creating the database: CREATE DATABASE Logs;  
+9.	Start of by creating the database: CREATE DATABASE Logs;
 And select it for use: USE DATABSE Logs;
 10.	To create the table you use the CREATE TABLE command: CREATE TABLE Logs (id INT PRIMARY KEY, Date DATE, User VARCHAR(30), Memory INT, IP VARCHAR(20), Hostname VARCHAR(20));
 That was a long one!
